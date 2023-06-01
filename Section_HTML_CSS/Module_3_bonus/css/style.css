@@ -1,0 +1,97 @@
+@import "reset.css";
+
+/*styles*/
+body {
+	background-color: #000;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 10px;
+	color: #e6e6e6;
+}
+
+.wrapper {
+	width: 960px;
+	height: 883px;
+	margin: 0 auto;
+	background-image: url(../img/bg.jpg);
+}
+
+.container {
+	width: 820px;
+	margin: 0 auto;
+	background-image: url(../img/palm.png);
+	background-repeat: no-repeat;
+	background-position: 140px 60px;
+}
+
+/*header*/
+.logo {
+	float: left;
+}
+
+.header {
+	padding-top: 135px;
+}
+
+.subtitle {
+	display: block;
+	margin: 5px 0 5px 85px;
+}
+
+.contacts {
+	float: right;
+	margin: 15px 15px 0 0;
+}
+
+.contact {
+	display: block;
+	font-size: 8px;
+	margin-top: 5px;
+	text-decoration: none;
+	color: inherit;
+}
+
+.clear {
+	clear: both;
+}
+
+/*content*/
+.gallery a {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 16px;
+	color: #e6e6e6;
+	text-decoration: none;
+}
+
+.gallery a:hover {
+	text-decoration: underline;
+}
+
+.gallery {
+	text-align: center;
+}
+
+.gallery li {
+	float: left;
+	margin: 15px 14px 50px 0;
+}
+
+.gallery li:nth-child(3n) {
+	margin-right: 0;
+}
+
+.gallery img {
+	width: 256px;
+	height: 174px;
+	border: 3px solid #9b9b9b;
+	padding: 1px;
+}
+
+.gallery span {
+	display: block;
+}
+
+/*footer*/
+.footer {
+	text-align: center;
+	padding: 135px 0 25px;
+}
