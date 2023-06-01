@@ -1,0 +1,27 @@
+@import "reset.css";
+/*styles*/
+table {
+	margin: 25px;
+}
+td {
+	border: 5px solid #1a1d0e;
+	padding: 40px;
+}
+.yellow {
+	background-color: #ffeb5f;
+}
+.red {
+	background-color: #fe5c3f;
+}
+.black {
+	background-color: #2d2d2d;
+}
+.blue {
+	background-color: #0c4a8a;
+}
+.hidden {
+	border: 0;
+}
+.hide-border {
+	border-right: 5px solid transparent;
+}
