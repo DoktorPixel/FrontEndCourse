@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Zazor</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<div class="top-line clearfix">
+				<div class="phones">
+					<span class="phone blue-color sprite round"></span>
+					<span>(044)123-45-67</span>
+					<span>(044)567-89-10</span>
+				</div><!--end phones-->
+				<div class="registration blue-color-gr">
+					<span class="sprite user"></span>
+					<form action="#">
+						<input type="text" name="login" placeholder="логин" required>
+						<input type="password" name="pass" placeholder="пароль" required>
+						<input type="submit" value="вход">
+					</form>
+					<a class="reg" href="#">регистрация</a>
+					<a class="gray-link" href="#">забыли пароль?</a>
+				</div><!--end registration-->
+				<div class="links shadow-block">
+					<a class="sprite home" href="#" title="главная"></a>
+					<a class="sprite sitemap" href="#" title="карта сайта"></a>
+					<a class="sprite mail" href="#" title="почта"></a>
+				</div><!--end links-->
+			</div><!--end top-line-->
+			<div class="baner">
+				<img src="img/header.jpg" alt="header">
+				<!-- <a class="logo" href="#">
+					<img src="img/logo.jpg" alt="zazor logo" title="На главную">
+				</a> -->
+			</div>
+			<div class="wrap-menu clearfix">
+				<div class="basket">
+					<a href="#" class="sprite basket-icon" title="корзина"></a>товаров:
+					<span class="amount">0</span>на сумму:
+					<span class="sum">0,00 грн.</span>
+				</div><!--end basket-->
+				<nav class="menu">
+					<ul>
+						<li><a href="#">О компани</a></li>
+						<li><a href="#">Оплата</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Статьи</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+			</div><!--end wrap-menu-->
+		</header>
+		<div class="filters clearfix">
+			<div class="filter-auto filter-style clearfix">
+				<div class="filter-title font-style">
+					<span>Диски</span>
+					<span class="filter-center-title">Поиск по автомобилю</span>
+					<span>Шины</span>				
+				</div><!--end filter title-->
+				<div class="left-auto clearfix">
+					<div class="title-input">
+					<p>Марка<span> авто:</span></p>
+					<p>Модель<span> автомобиля:</span></p>
+					<p>Год выпуска<span> автомобиля:</span></p>
+					<p>Комлектация</p>
+					</div><!--end title-input-->
+					<div class="inputs-auto select-style">
+						<select form="form-auto">
+							<option value="mark">&nbsp;</option>
+						</select>
+						<select form="form-auto">
+							<option value="model">&nbsp;</option>
+						</select>
+						<select class="short-select" form="form-auto">
+							<option value="year">&nbsp;</option>
+						</select>
+						<select form="form-auto">
+							<option value="coplect">&nbsp;</option>
+						</select>
+					</div><!--end inputs-auto-->
+				</div><!--end left-auto-->
+
+ 				<div class="right-auto">
+					<div class="title-input">
+					<p>Марка<span> авто:</span></p>
+					<p>Модель<span> автомобиля:</span></p>
+					<p>Год выпуска<span> автомобиля:</span></p>
+					<p>Комлектация</p>
+					</div><!--end title-input-->
+					<div class="inputs-auto select-style">
+						<select form="form-auto">
+							<option value="mark">&nbsp;</option>
+						</select>
+						<select form="form-auto">
+							<option value="model">&nbsp;</option>
+						</select>
+						<select class="short-select" form="form-auto">
+							<option value="year">&nbsp;</option>
+						</select>
+						<select form="form-auto">
+							<option value="coplect">&nbsp;</option>
+						</select>
+					</div><!--end inputs-auto-->
+				</div><!--end right-auto -->
+				<form action="#" id="form-auto">
+					<input class="btn-style" type="submit" value="Поиск...">
+				</form>
+			</div><!--end filter-auto-->
+
+			<div class="filter-tire filter-style clearfix">
+				<div class="filter-tire-title font-style">
+					<span>Поиск шин</span>
+				</div>
+				<div class="left-tire">
+					<p>Размер:</p>
+					<p>R</p>
+					<p>Сезон:</p>
+				</div><!--end left-tire-->
+				<div class="right-tire select-style">
+					<select form="filter-tire">
+						<option value="size">145</option>
+					</select>&nbsp;&nbsp;/&nbsp;&nbsp;
+					<select form="filter-tire">
+						<option value="size-2">&nbsp;</option>
+					</select>
+					<select form="filter-tire">
+						<option value="r-value">12</option>
+					</select>
+					<form action="#" id="filter-tire">
+					<label>
+						<input type="checkbox" name="tire-check">лето
+					</label>
+					<label>
+						<input type="checkbox" name="tire-check">зима
+					</label>
+					<label>
+						<input type="checkbox" name="tire-check">всесез
+					</label>
+					<input class="btn-style" type="submit" value="Поиск...">
+					</form>
+				</div><!--end right-tire-->
+			</div><!--end filter-tire-->
+
+		<div class="filter-disk filter-style select-style clearfix">
+			<div class="filter-disk-title font-style">
+				<span>Поиск дисков</span>
+			</div>
+			<div class="disk-left">
+				<p>Диаметр <span>диска:</span></p>
+				<p>Количество <span>крепёжных отверстий:</span></p>
+				<p>Диаметр <span>расположенных крепёжных отверстий:</span></p>
+			</div><!--end disk-left-->
+			<div class="disk-middle">
+				<select form="disk-filter">
+					<option value="diameter">14</option>
+				</select>
+				<select form="disk-filter">
+					<option value="amount">3</option>
+				</select>
+				<select form="disk-filter">
+					<option value="diametr-two">12</option>
+				</select>
+			</div><!--end disk-middle-->
+
+			<div class="disk-right">
+				<p>ДЦО<span>(диаметр центрального отверстия)</span></p>
+				<select form="disk-filter">
+					<option value="dco">12</option>
+				</select>
+				<p>ЕТ<span>(вылет диска)</span></p>
+				<select form="disk-filter">
+					<option value="dco">12</option>
+				</select>
+			</div><!--end disk-right-->
+			<form action="#" id="disk-filter">
+				<input class="btn-style" type="submit" value="Поиск...">
+			</form>
+		</div><!--end filter-disk-->
+
+		</div><!--end filters-->
+		<div class="content clearfix">
+			<aside class="catalog">
+				<h3 class="shadow-block"><span class="sprite list blue-color round"></span>Каталог продукции:</h3>
+
+				<div class="list-title">
+					<span class="title-icon blue-color sprite round"></span>
+					<a href="#">Шины</a>
+				</div><!-- end list-title -->
+				<ul class="sub-list">
+					<li><a href="#">Наименование 1</a></li>
+					<li><a href="#">Наименование 2</a></li>
+					<li><a href="#">Наименование 3</a></li>
+					<li><a href="#">Наименование 4</a></li>
+				</ul><!-- end sub-list -->
+
+				<div class="list-title">
+					<span class="title-icon blue-color sprite round"></span>
+					<a href="#">Диски</a>
+				</div><!-- end list-title -->
+				<ul class="sub-list">
+					<li><a href="#">Наименование 1</a></li>
+					<li><a href="#">Наименование 2</a></li>
+					<li><a href="#">Наименование 3</a></li>
+					<li><a href="#">Наименование 4</a></li>
+				</ul><!-- end sub-list -->
+
+				<div class="list-title bolt-pxl">
+					<span class="title-icon blue-color sprite round"></span>
+					<a href="#">Болты</a>
+				</div><!-- end list-title -->
+				<ul class="sub-list">
+					<li><a href="#">Наименование 1</a></li>
+					<li><a href="#">Наименование 2</a></li>
+					<li><a href="#">Наименование 3</a></li>
+					<li><a href="#">Наименование 4</a></li>
+				</ul><!-- end sub-list -->
+			</aside>
+
+
+			<main class="productions">
+
+				<figure class="product">
+					<figcaption>
+						<h4>Goodyear</h4>
+						<p class="product__name1">Ultra Grip Extreme</p>
+					</figcaption>
+					<span class="img-wrap">
+						<img src="img/content/goodyear.jpg" alt="">
+					</span>
+					<a href="#">90,00 <span>грн</span></a>
+				</figure>
+
+				<figure class="product second-column">
+					<figcaption>
+						<h4>Nokian</h4>
+						<p class="product__name2">Nakkapeliitta R</p>
+					</figcaption>
+					<span class="img-wrap">
+						<img src="img/content/nokian.jpg" alt="">
+					</span>
+					<a href="#">115,00 <span>грн</span></a>
+				</figure>
+
+				<figure class="product">
+					<figcaption>
+						<h4>Hankook</h4>
+						<p class="product__name3">K 708 155 /65 R14</p>
+					</figcaption>
+					<span class="img-wrap">
+						<img src="img/content/hankook.jpg" alt="">
+					</span>
+					<a href="#">393,00 <span>грн</span></a>
+				</figure>
+
+				<figure class="product">
+					<figcaption>
+						<h4>Goodyear</h4>
+						<p class="product__name1">Ultra Grip Extreme</p>
+					</figcaption>
+					<span class="img-wrap row2">
+						<img src="img/content/goodyear.jpg" alt="">
+					</span>
+					<a href="#">90,00 <span>грн</span></a>
+				</figure>
+
+				<figure class="product second-column">
+					<figcaption>
+						<h4>Nokian</h4>
+						<p class="product__name2">Nakkapeliitta R</p>
+					</figcaption>
+					<span class="img-wrap row2">
+						<img src="img/content/nokian.jpg" alt="">
+					</span>
+					<a href="#">115,00 <span>грн</span></a>
+				</figure>
+
+				<figure class="product">
+					<figcaption>
+						<h4>Hankook</h4>
+						<p class="product__name3">K 708 155 /65 R14</p>
+					</figcaption>
+					<span class="img-wrap row2">
+						<img src="img/content/hankook.jpg" alt="">
+					</span>
+					<a href="#">393,00 <span>грн</span></a>
+				</figure>
+
+				<figure class="product tnx-designer-product">
+					<figcaption>
+						<h4 class="third-prod-bot">Goodyear</h4>
+						<p class="product__name1">Ultra Grip Extreme</p>
+					</figcaption>
+					<span class="img-wrap">
+						<img src="img/content/goodyear.jpg" alt="">
+					</span>
+					<a href="#">90,00 <span>грн</span></a>
+				</figure>
+
+				<figure class="product tnx-designer-product second-column">
+					<figcaption>
+						<h4>Nokian</h4>
+						<p class="product__name2">Nakkapeliitta R</p>
+					</figcaption>
+					<span class="img-wrap">
+						<img src="img/content/nokian.jpg" alt="">
+					</span>
+					<a href="#">115,00 <span>грн</span></a>
+				</figure>
+
+				<figure class="product tnx-designer-product">
+					<figcaption>
+						<h4>Hankook</h4>
+						<p class="product__name3">K 708 155 /65 R14</p>
+					</figcaption>
+					<span class="img-wrap">
+						<img src="img/content/hankook.jpg" alt="">
+					</span>
+					<a href="#">393,00 <span>грн</span></a>
+				</figure>
+
+			</main>
+
+			<aside class="brands">
+				<h3 class="shadow-block"><span class="sprite list blue-color round"></span>Бренды:</h3>
+
+				<div class="list-title">
+					<span class="title-icon blue-color sprite round"></span>
+					<a href="#">Шины</a>
+				</div><!-- end list-title -->
+				<form action="#">
+					<ul class="sub-list bottom-sub shina">
+						<li><input type="checkbox" name="check">Бренд 1</li>
+						<li><input type="checkbox" name="check">Бренд 2</li>
+						<li><input type="checkbox" name="check">Бренд 3</li>
+					</ul><!-- end sub-list -->					
+
+					<div class="list-title dsk-designer">
+						<span class="title-icon blue-color sprite round"></span>
+						<a href="#">Диски</a>
+					</div><!-- end list-title -->
+					<ul class="sub-list bottom-sub">
+						<li><input type="checkbox" name="check">Бренд 1</li>
+						<li><input type="checkbox" name="check">Бренд 2</li>
+						<li><input type="checkbox" name="check">Бренд 3</li>
+					</ul><!-- end sub-list -->
+					<input class="shadow-block" type="submit" value="Выбрать">
+				</form>
+			</aside>
+		</div>
+		<div class="sponsors">
+			<a class="transparent-img a-1" href="#">
+				<img src="img/content/toyo.png" alt="">
+			</a>
+			<a class="transparent-img a-2" href="#">
+				<img src="img/content/bridgestone.png" alt="">
+			</a>
+			<a class="transparent-img a-3" href="#">
+				<img src="img/content/continental.png" alt="">
+			</a>
+			<a class="transparent-img a-4" href="#">
+				<img src="img/content/asd.png" alt="">
+			</a>
+			<a class="transparent-img a-5" href="#">
+				<img src="img/content/avon.png" alt="">
+			</a>
+			<a class="transparent-img a-6" href="#">
+				<img src="img/content/tirefactory.png" alt="">
+			</a>
+			<a class="transparent-img a-7" href="#">
+				<img src="img/content/pirelli.png" alt="">
+			</a>
+			<a class="transparent-img a-8" href="#">
+				<img src="img/content/dunlop.png" alt="">
+			</a>
+		</div>
+		<footer class="footer">
+			<ul>
+				<li class="first-f"><a href="#">О компании</a></li>
+				<li class="second-f"><a href="#">Доставка</a></li>
+				<li class="third-f"><a href="#">Статьи</a></li>
+				<li class="fouth-f"><a href="#">Контакты</a></li>
+			</ul>
+			<span>Создание сайта 	&copy; Global Vision</span>
+		</footer>
+	</div><!--end container-->
+</body>
+</html>
