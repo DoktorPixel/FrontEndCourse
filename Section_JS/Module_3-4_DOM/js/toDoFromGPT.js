@@ -59,7 +59,8 @@ function createDiv() {
   const buttonNew = document.createElement("button");
   buttonNew.textContent = "Нажми меня";
   wrapperForBtn.appendChild(buttonNew);
-
+  buttonNew.classList.add("btn-danger");
+  buttonNew.classList.add("btn");
   buttonNew.addEventListener("click", function () {
     const image = document.createElement("img");
     image.src =
