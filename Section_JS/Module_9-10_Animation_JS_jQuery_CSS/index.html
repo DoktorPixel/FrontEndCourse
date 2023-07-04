@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Homework 9-10</title>
+	<link rel="stylesheet" href="libs/owl/owl.carousel.css">
+	<link rel="stylesheet" href="libs/heapbox/dark.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		
+		<!-- menu -->
+		<h1>Меню</h1>
+		<nav class="menu">
+			<ul>
+				<li class="dropdown">
+					<a href="#">Пункт 1</a>
+					<ul class="sub-menu">
+						<li><a href="#">Подпункт 1</a></li>
+						<li class="dropdown">
+							<a href="#">Подпункт 2</a>
+							<ul class="sub-menu">
+								<li><a href="#">Подпункт 1 подпункта 2</a></li>
+								<li><a href="#">Подпункт 2 подпункта 2</a></li>
+								<li><a href="#">Подпункт 3 подпункта 2</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Подпункт 3</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Пункт 2</a></li>
+				<li class="dropdown">
+					<a href="#">Пункт 3</a>
+					<ul class="sub-menu">
+						<li><a href="#">Подпункт 1</a></li>
+						<li class="dropdown">
+							<a href="#">Подпункт 2</a>
+							<ul class="sub-menu">
+								<li><a href="#">Подпункт 1 подпункта 2</a></li>
+								<li><a href="#">Подпункт 2 подпункта 2</a></li>
+								<li><a href="#">Подпункт 3 подпункта 2</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Подпункт 3</a></li>
+					</ul>						
+				</li>
+			</ul>
+		</nav>
+
+		<!-- jcarousel -->
+		<h1>Карусель</h1>
+		<div class="owl-wrap">
+			<div id="owl-demo" class="owl-carousel">
+				<div><img src="img/1.jpg" alt=""></div>
+				<div><img src="img/2.jpg" alt=""></div>
+				<div><img src="img/3.jpg" alt=""></div>
+				<div><img src="img/4.jpg" alt=""></div>
+			</div>
+		</div>
+		<!-- select -->
+		<div class="select-wrap">
+			<h1>Селекты</h1>
+			<select class="basic-example">
+				<option value="option1">Пурвый пункт</option>
+				<option value="option2" disabled>Второй недоступный</option>
+				<option value="option1">Третий</option>
+			</select>
+		</div>
+		<!-- css checkbox -->
+		<div class="css-check-wrap">
+			<h1>css чекбоксы</h1>
+			<ul class="checklist">
+				<li><input type="checkbox" name="" id="input1">
+					<label for="input1">css checkbox-1</label>
+				</li>
+				<li><input type="checkbox" name="" id="input2">
+					<label for="input2">css checkbox-2</label>
+				</li>
+				<li><input type="checkbox" name="" id="input3">
+					<label for="input3">css checkbox-3</label>
+				</li>
+			</ul>
+		</div>
+		<!-- jQuery checkbox -->
+		<div class="jquery-checkbox-wrap">
+			<h1>jQuery чекбоксы</h1>
+			<ul class="jq-check">
+				<li class="decor_checkbox">
+					<span>
+						<input type="checkbox" />		
+					</span>
+					<label>jQuery checkbox-1</label>
+				</li>
+				<li class="decor_checkbox">
+					<span>
+						<input checked="checked" type="checkbox" />		
+					</span>
+					<label>jQuery checkbox-2</label>
+				</li>
+				<li class="decor_checkbox">
+					<span>
+						<input type="checkbox" />		
+					</span>
+					<label>jQuery checkbox-3</label>
+				</li>
+			</ul>
+		</div><!-- end jquery checkbox -->
+
+	</div><!-- end container -->
+
+
+	<script src="libs/jquery/jquery.min.js"></script><script src="libs/owl/owl.carousel.min.js"></script>
+	<script src="libs/heapbox/jquery.heapbox-0.9.4.min.js"></script>
+	<script src="libs/checkbox/checkbox.js"></script>
+	<script src="libs/jquery-color/jquery.color.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
