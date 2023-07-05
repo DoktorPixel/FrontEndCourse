@@ -14,7 +14,7 @@ $(function() {
 	var articles = [
 		{
 			title: 'Иванов Иван Иванович',
-			content: 'Системный администратор ',
+			content: 'Системный администратор Windows',
 			motivationOne: 'Хочу развиваться, как профессионал',
 			motivationTwo: 'Мне нравится фронтенд',
 			motivationThree: 'Достойная оплата труда',
