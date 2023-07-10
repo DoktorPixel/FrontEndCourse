@@ -10,7 +10,6 @@ searchForm.addEventListener("submit", function (event) {
   event.preventDefault(); // Предотвращаем отправку формы по умолчанию
   imgSearch(searchInput.value);
 });
-
 // const imgTag = 'nature'; // is testing
 // imgSearch ()
 
