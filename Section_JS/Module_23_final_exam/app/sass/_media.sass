@@ -1,0 +1,225 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/*HEADER*/
+	.container
+		min-width: 768px
+		padding: 0 10px
+	.reg
+		width: 50%
+		float: right
+		text-align: right
+		&__item
+			margin-right: 0
+	.header__top-logo
+		float: left
+		padding: 10px 0
+		margin-left: -10px
+		letter-spacing: 1px;
+	.header
+		min-height: 700px
+		&__top
+			padding: 37px 50px 0
+		&__title
+			font-size: 52px
+			line-height: 60px
+			padding: 0 65px
+			margin-top: 29px
+		&__subtitle
+			font-size: 24px
+			padding: 20px 0
+			letter-spacing: 0.1px
+	.btn--large
+		padding: 12px 15px
+	/*WORKS*/
+	.section-title
+		margin: 98px 0 35px
+		letter-spacing: 0
+	.works__wrap
+		width: 750px
+	.works__slider
+		width: 235px
+		height: 400px
+		margin-bottom: 0
+		margin-right: 20px
+		&-img
+			height: 400px
+	/*controls*/
+	aside[id*="-control"] .slidr-control.right,
+	aside[id*="-control"] .slidr-control.left
+		width: 30px !important
+		height: 56px !important
+		top: 50% !important
+		margin-top: -160px !important
+		background-image: url(../sprites/sprite.png)
+		opacity: 0.4
+	aside[id*="-control"] .slidr-control.right
+		right: 25px !important
+		background-position: -30px 0px
+	aside[id*="-control"] .slidr-control.left
+		left: 25px !important
+		background-position: 0 0
+	aside[id*="-control"] .slidr-control.right:hover,
+	aside[id*="-control"] .slidr-control.left:hover
+	  opacity: 1
+	.works__slider--last
+		margin-right: 0
+	/*PARTNERS*/
+	.section-title--partners
+		margin-bottom: 33px
+	.partners__item
+		float: left
+		width: 50%
+		padding: 0 36px
+		margin-bottom: 50px
+	.partners__wrap
+		max-width: 580px
+		margin: 0 auto
+	/*IDEAS*/
+	.grid
+		width: 100%
+		&__item,
+		&__sizer
+			width: 31.33%
+			margin: 0.9%
+	.section-title--ideas
+		margin-top: 110px
+	/*SEARCH*/
+	.search__paragraph
+		margin-bottom: 37px
+	.search__input-text
+		width: 235px
+		margin-right: 20px
+		display: inline
+	.btn--large-input
+		padding: 10px 25px
+	/*FOOTER*/
+	.container--footer
+		padding: 20px 40px 40px
+	.footer
+		margin-top: 91px
+		&__logo
+			float: left
+	.footer-menu
+		float: left
+		margin-left: 80px
+		text-align: left
+	.footer-menu__item
+		display: block
+		margin: 16px 0 -6px
+	.footer-menu__title--second
+		float: left
+		margin-left: 103px
+	.footer__copy
+		float: right
+		text-align: right
+	.footer-menu__title
+		margin-top: 0
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 960px)
+	.container
+		max-width: 960px
+		padding: 0 10px
+	.header__top
+		padding: 37px 0 0
+	.header__title
+		padding: 0 160px
+	.header__top-logo
+		margin-left: 0
+	/*WORKS*/
+	.works__wrap
+		width: 940px
+	.works__slider
+		width: 300px
+	/*controls*/
+	aside[id*="-control"] .slidr-control.left,
+	aside[id*="-control"] .slidr-control.right
+		margin-top: -48px !important
+	/*PARTNERS*/
+	.partners__item
+		float: left
+		width: 25%
+		padding: 0 10px
+		margin-bottom: 44px
+	.partners__wrap
+		max-width: 100%
+	/*IDEAS*/
+	.grid
+		width: 100%
+	/*SEARCH*/
+	.search__paragraph
+		margin-bottom: 42px
+	/*FOOTER*/
+	.footer
+		margin-top: 88px
+		padding-top: 38px
+		padding-bottom: 40px
+	.footer-menu
+		margin-left: 93px
+	.footer-menu__title--second
+		margin-left: 93px
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
